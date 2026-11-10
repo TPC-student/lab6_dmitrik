@@ -1,18 +1,12 @@
-R1#copy running-config startup-config
-%SYS-5-CONFIG_I: Configured from console by console
-
-Destination filename [startup-config]? show startup-config
-%Error copying nvram:show startup-config (Invalid argument)
-R1#
 R1#show startup-config
-Using 890 bytes
+Using 886 bytes
 !
 version 15.1
 no service timestamps log datetime msec
 no service timestamps debug datetime msec
 no service password-encryption
 !
-hostname Router
+hostname R1
 !
 !
 !
@@ -55,15 +49,15 @@ interface GigabitEthernet0/0
 !
 interface GigabitEthernet0/0.10
  encapsulation dot1Q 10
- ip address 10.1.10.254 255.255.255.0
+ ip address 10.8.10.254 255.255.255.0
 !
 interface GigabitEthernet0/0.20
  encapsulation dot1Q 20
- ip address 10.1.20.254 255.255.255.0
+ ip address 10.8.20.254 255.255.255.0
 !
 interface GigabitEthernet0/0.30
  encapsulation dot1Q 30
- ip address 10.1.30.254 255.255.255.0
+ ip address 10.8.30.254 255.255.255.0
 !
 interface GigabitEthernet0/1
  no ip address
