@@ -1,12 +1,12 @@
-SW1#show startup-config
-Using 1409 bytes
+SW2#show startup-config
+Using 1406 bytes
 !
 version 15.0
 no service timestamps log datetime msec
 no service timestamps debug datetime msec
 no service password-encryption
 !
-hostname Switch
+hostname SW2
 !
 !
 !
